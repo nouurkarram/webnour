@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="./login.js"></script>
+    <form onsubmit="return Signin()" class="login">
+        <label>Username:</label>
+        <input class="text" type="text" id="usernamel" name="Username" placeholder="enter your name"><br>
+        <label>Password:</label>
+        <input class="text" type="password" id="passwordl" name="Password" placeholder="enter your password"><br>
+        
+        <div class="btnlogin1">
+           <a href="review.html"> <button class="btn1">log in</button><br></a>
+          
+            <button class="btnlogin1" >sign in</button><br>
+            <button class="btnlogin1">forget password</button><br>
+            <button class="a1" onclick="showsignup()">don't have an account?</button><br>
+        </div>
+
+    </form>
+    <form onsubmit="return signup() " class="signup" id="
+    ">
+        <label for="Username">Username:</label>
+        <input class="input" type="text" id="username" name="Username" placeholder="enter your name"><br>
+        <label for="password">password:</label>
+        <input class="input" type="password" id="password" name="password" placeholder="enter your password"><br>
+        <label for="Confirm Password">confirm:</label>
+        <input  class="input"  type="password" id="c-pass" name="Confirm Password" placeholder="confirm your password"><br>
+        <label   for="Email">Email:</label>
+        <input  class="input"  type="email" id="email" name="Email" placeholder="enter your email"><br>
+        <label    for="Age">Age:</label>
+        <input  class="input"  type="number" id="age" name="Age"  min="18" max="30"><br>
+        <label  for="phone">phone:</label>
+        <input  class="input"  type="tel" id="phonenumber" name="Phone" placeholder="enter your phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Phone number must be in the format: 123-456-7890"><br>
+
+        <label for="gender">Gender</label><br>
+        <input  class="input"  type="radio" value="male" name="gender" id="male">
+        <label for="male">Male</label><br>
+        <input  class="input"  type="radio" value="female" id="female" name="gender">
+        <label  class="input"  for="female">Female</label><br>
+        <label  class="input"  for="city">city</label>
+        <select id="city">
+            <option id="city" name="city" disabled selected >select your city</option>
+            <option id="cairo" value="cairo">cairo</option>
+        </select>
+        <div class="btnlogin1">
+            <button class="btn1">signup</button>
+        </div>
+    </form>
+    <form class="forget">
+        <label>Username:</label>
+        <input class="text" type="text" id="usernamel" name="Username" placeholder="enter your name"><br>
+        <label>new password:</label>
+        <input class="text" type="text" id="passwordl" name="new username" placeholder="enter your name"><br>
+        <div class="btnlogin1">
+            <button onclick="forgotpassword()" class="btn1">update</button>
+        </div>
+        
+    </form>
+    
+</body>
+</html>
